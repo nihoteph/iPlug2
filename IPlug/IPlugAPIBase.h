@@ -184,6 +184,7 @@ public:
 
   /** Called by the API class to create the timer that pumps the parameter/message queues */
   void CreateTimer();
+  void DestroyTimer();
   
 private:
   /** Implementations call into the APIs resize hooks

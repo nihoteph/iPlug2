@@ -43,6 +43,8 @@ IPlugAPPHost::~IPlugAPPHost()
 
   if(mMidiOut)
     mMidiOut->closePort();
+
+  mIPlug.release();
 }
 
 //static
