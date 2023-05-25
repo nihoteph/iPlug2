@@ -191,7 +191,6 @@ private:
   void ShowSelectedPage()
   {
     const char* selected = GetTabsControl()->GetSelectedLabelStr();
-    int idx = GetTabsControl()->GetSelectedIdx();
 
     ForAllPagesFunc([&](IVTabbedPageBase* pPage) {
       const char* pageLabel = pPage->GetLabelStr();
